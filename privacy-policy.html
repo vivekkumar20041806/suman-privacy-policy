@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy | Suman Saini App</title>
+<meta name="description" content="Privacy Policy for Suman Saini App and its birthday website">
+<style>
+:root{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#392747;background:#fff3fa}*{box-sizing:border-box}
+body{margin:0;line-height:1.65}header{background:linear-gradient(120deg,#b82e88,#6b2f95);color:#fff;padding:35px 16px;text-align:center}
+header h1{font-size:clamp(25px,4vw,36px);margin:0 0 8px}header p{margin:0;color:#ffe2f1}
+main{max-width:810px;margin:24px auto 48px;padding:25px 27px;background:#fff;border:1px solid #f0c9e3;border-radius:21px;box-shadow:0 8px 28px #862c6d18}
+h2{font-size:19px;margin:25px 0 7px;color:#91296e}p{margin:9px 0}ul{padding-left:22px}a{color:#922e8a}button{cursor:pointer;border:0;border-radius:11px;padding:12px 16px;background:#9d307f;color:white;font:600 14px system-ui}
+.settings{background:#fff4fa;border:1px solid #f3cfe5;border-radius:13px;padding:15px;margin-top:18px}#status{font-size:13px;color:#7d4670}
+@media(max-width:520px){main{margin:12px 9px 28px;padding:17px}header{padding:29px 14px}}
+</style>
+</head>
+<body>
+<header><h1>Privacy Policy</h1><p>Suman Saini App &amp; Birthday Website · Updated 22 November 2026</p></header>
+<main>
+<p>This policy explains how the Suman Saini App and its birthday website handle information when you use the birthday pages, media gallery, songs and optional online features. For questions or data requests, contact <a href="mailto:vivekkumar20041806@gmail.com">vivekkumar20041806@gmail.com</a>.</p>
+<h2>1. Basic usage information</h2>
+<p>We may collect limited activity metrics: which birthday page was visited, approximate time spent on each page, and counts of interactions such as button taps, photo views, gallery navigation, song plays and unsuccessful password attempts. A random visit token is generated for the current website session only, to group these counts. We do not use this analytics feature to build a persistent identity across visits.</p>
+<p>We do <strong>not</strong> collect typed passwords, search queries, names entered into forms, exact song or photo filenames, GPS coordinates, device hardware IDs, contacts, camera photos or microphone recordings through the basic analytics feature.</p>
+<h2>2. Purpose and retention</h2>
+<p>These counts help the administrator understand whether birthday pages are working and how often features are used. Activity events are sent to a protected server when an internet connection is available. The activity backend is configured to retain logs for up to 30 days. Existing consent-based records created before this reduced-data update may contain more detail and can be deleted on request.</p>
+<h2>3. Service providers and online content</h2>
+<p>Website activity information is processed using the website's hosting provider, currently Hostinger. Standard hosting security/access logs may process connection information such as IP addresses independently of the basic activity feature. When you use the Gallery's View All YouTube feature, YouTube/Google may receive data needed to deliver video search and playback, according to their own terms and privacy policies. YouTube content requires an internet connection.</p>
+<h2>4. Offline and local data</h2>
+<p>Downloaded app assets such as birthday photos, audio and videos may be stored within the app so that offline features work. Admin changes and newer content may need an internet connection to sync. Basic analytics is not stored persistently as an offline history by this version.</p>
+<h2>5. Security and access</h2>
+<p>Activity history is accessible through authenticated administrator controls, not to ordinary visitors. We use HTTPS for transmission to the activity server and limit the types of events collected. We do not sell basic usage activity for advertising.</p>
+<h2>6. Your choices and deletion</h2>
+<p>You may disable optional basic activity analytics for this browser using the control below. That choice stays in this browser's storage. You may also email us to request access, correction or deletion of any older identifiable activity logs, if present. Because current anonymous visit tokens are not kept as account identifiers, individual visits may not be attributable after the session ends.</p>
+<div class="settings"><strong>Basic activity analytics</strong><p id="status" aria-live="polite"></p><button id="change" type="button"></button></div>
+<h2>7. Children, changes and contact</h2>
+<p>This app is intended as a personal birthday experience, not as a service for collecting information from children. We may update this policy when the app, hosting or data practices change. The current policy is available in the app's Settings menu and online at the published privacy policy link.</p>
+<p>Contact: <a href="mailto:vivekkumar20041806@gmail.com">vivekkumar20041806@gmail.com</a></p>
+<p><a href="index.html">← Back to Suman Saini Home</a></p>
+</main>
+<script>
+(()=>{'use strict';const key='birthday_basic_analytics_disabled',t=document.getElementById('status'),b=document.getElementById('change');
+ const read=()=>{try{return localStorage.getItem(key)==='1'}catch{return false}};
+ const update=()=>{let off=read();t.textContent=off?'Basic analytics is off in this browser.':'Basic anonymous activity counts are enabled in this browser.';b.textContent=off?'Enable basic analytics':'Turn off basic analytics';};
+ b.addEventListener('click',()=>{try{read()?localStorage.removeItem(key):localStorage.setItem(key,'1')}catch{}update()});update();
+})();
+</script>
+</body>
+</html>
